@@ -31,7 +31,7 @@ TRANSLATIONS = {
             ("2. What excites you most?", [["Flirty talk", "Chemistry"], ["Deep connection", "All of it"]]),
             ("3. How soon to meet?", [["Tonight", "This week"], ["Let's chat", "No rush"]]),
         ],
-        "result": "Great match! Let’s get you started 👉 {}",
+        "result": "Great! Register now. You'll get an email. Then access the site with women 👉 {}",
         "cancel": "Cancelled.",
     },
     "ru": {
@@ -41,7 +41,7 @@ TRANSLATIONS = {
             ("2. Что вас больше всего заводит?", [["Флирт", "Химия"], ["Глубокая связь", "Всё сразу"]]),
             ("3. Когда хотите встретиться?", [["Сегодня", "На этой неделе"], ["Сначала пообщаемся", "Не спешу"]]),
         ],
-        "result": "Идеально! Начни прямо сейчас 👉 {}",
+        "result": "Идеально! Переходи регистрируйся. Тебе на почту придет письмо. Затем ты получишь доступ к сайту с женщинами 👉 {}",
         "cancel": "Отменено.",
     },
     "fr": {
@@ -51,7 +51,7 @@ TRANSLATIONS = {
             ("2. Qu’est-ce qui vous excite le plus ?", [["Séduction", "Alchimie"], ["Connexion profonde", "Tout ça"]]),
             ("3. Quand se rencontrer ?", [["Ce soir", "Cette semaine"], ["D’abord discuter", "Pas pressé"]]),
         ],
-        "result": "Parfait ! Commence ici 👉 {}",
+        "result": "Parfait ! Inscris-toi. Tu recevras un email. Puis tu accèderas au site avec des femmes 👉 {}",
         "cancel": "Annulé.",
     }
 }
