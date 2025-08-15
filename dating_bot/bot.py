@@ -94,7 +94,8 @@ async def quiz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         lang = context.user_data['lang']
         await update.message.reply_text(
             TRANSLATIONS[lang]["result"].format(DATING_URL),
-            reply_markup=ReplyKeyboardRemove()
+            reply_markup=ReplyKeyboardRemove(),
+            disable_web_page_preview=True
         )
         return ConversationHandler.END
 
