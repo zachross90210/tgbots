@@ -31,7 +31,7 @@ TRANSLATIONS = {
             ("2. What excites you most?", [["Flirty talk", "Chemistry"], ["Deep connection", "All of it"]]),
             ("3. How soon to meet?", [["Tonight", "This week"], ["Let's chat", "No rush"]]),
         ],
-        "result": "Great! Register now. You'll get an email. Then access the site with women 👉 {}",
+        "result": "Great! Register now. You'll get an email. Then access the site with women 👉 <a href='{}'>CLICK HERE</a>",
         "cancel": "Cancelled.",
     },
     "ru": {
@@ -41,7 +41,7 @@ TRANSLATIONS = {
             ("2. Что вас больше всего заводит?", [["Флирт", "Химия"], ["Глубокая связь", "Всё сразу"]]),
             ("3. Когда хотите встретиться?", [["Сегодня", "На этой неделе"], ["Сначала пообщаемся", "Не спешу"]]),
         ],
-        "result": "Идеально! Переходи регистрируйся. Тебе на почту придет письмо. Затем ты получишь доступ к сайту с женщинами 👉 {}",
+        "result": "Идеально! Переходи регистрируйся. Тебе на почту придет письмо. Затем ты получишь доступ к сайту с женщинами 👉  <a href='{}'>ЖМИ СЮДА</a>",
         "cancel": "Отменено.",
     },
     "fr": {
@@ -51,7 +51,7 @@ TRANSLATIONS = {
             ("2. Qu’est-ce qui vous excite le plus ?", [["Séduction", "Alchimie"], ["Connexion profonde", "Tout ça"]]),
             ("3. Quand se rencontrer ?", [["Ce soir", "Cette semaine"], ["D’abord discuter", "Pas pressé"]]),
         ],
-        "result": "Parfait ! Inscris-toi. Tu recevras un email. Puis tu accèderas au site avec des femmes 👉 {}",
+        "result": "Parfait ! Inscris-toi. Tu recevras un email. Puis tu accèderas au site avec des femmes 👉 <a href='{}'>Cliquez ici</a>",
         "cancel": "Annulé.",
     }
 }
@@ -95,7 +95,8 @@ async def quiz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         await update.message.reply_text(
             TRANSLATIONS[lang]["result"].format(DATING_URL),
             reply_markup=ReplyKeyboardRemove(),
-            disable_web_page_preview=True
+            disable_web_page_preview=True,
+            parse_mode="HTML"
         )
         return ConversationHandler.END
 
