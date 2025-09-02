@@ -1,0 +1,15 @@
+[Unit]
+Description=Erectus Telegram Bot Service
+After=network.target
+
+[Service]
+Type=simple
+User=ross
+WorkingDirectory=/home/ross/dev/bots/erectus
+Environment=PATH=/home/ross/dev/bots/erectus/venv/bin
+ExecStart=/home/ross/dev/bots/erectus/venv/bin/python bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target 
